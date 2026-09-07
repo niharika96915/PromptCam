@@ -1,75 +1,151 @@
-# React + TypeScript + Vite
+# 🎥 PromptCam — AI-Style Teleprompter Camera
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PromptCam is a **mobile-first teleprompter camera web application** designed to help users record videos confidently without forgetting their speech.
 
-Currently, two official plugins are available:
+Simply paste your complete script, open the camera, and read the speech naturally while the teleprompter automatically scrolls on the screen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 📝 Paste your **complete speech/script**
+* 📱 Mobile-first responsive interface
+* 📷 Front-camera support
+* 📜 Smooth teleprompter scrolling
+* ⚡ Adjustable scrolling speed
+* ▶️ Play / Pause controls
+* 🔄 Reset teleprompter position
+* 🎙️ Camera + microphone recording
+* 🎬 Recorded video preview
+* 💾 Save recorded video to device
+* ⏱️ Recording timer
+* 🔁 Record again option
+* 🔒 Browser-based camera and microphone permissions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **React**
+* **TypeScript**
+* **Vite**
+* **CSS3**
+* **MediaDevices API**
+* **MediaRecorder API**
+* **HTML5 Video**
+* **JavaScript / TypeScript**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+PromptCam/
+│
+├── public/
+│
+├── src/
+│   ├── App.tsx
+│   ├── App.css
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Clone the repository
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd promptcam
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+For testing camera and microphone on a mobile device, use a secure HTTPS environment.
+
+## 🎯 How It Works
+
+```text
+Paste Script
+     ↓
+Open Camera
+     ↓
+Teleprompter Displays Script
+     ↓
+Adjust Scrolling Speed
+     ↓
+Start Recording
+     ↓
+Camera + Microphone Capture
+     ↓
+Preview Recording
+     ↓
+Save Video
+```
+
+## 📱 Mobile Experience
+
+PromptCam is designed primarily for smartphones, making it suitable for:
+
+* 🎥 Instagram / YouTube videos
+* 🎓 College presentations
+* 💼 Professional introductions
+* 📢 Content creation
+* 🗣️ Speech and presentation practice
+* 📹 Short-form video recording
+
+## 🔐 Browser Permissions
+
+PromptCam requires:
+
+* Camera permission
+* Microphone permission
+
+These permissions are requested by the browser and are required for recording.
+
+## ⚠️ Current Limitation
+
+Because PromptCam runs as a web application, saving directly into a phone's gallery is controlled by the browser. The application provides a save/download flow for the recorded video.
+
+Native gallery integration can be added in a future version using a mobile wrapper such as Capacitor.
+
+## 🔮 Future Improvements
+
+* 🤖 AI-powered script assistance
+* 🎤 Voice-controlled teleprompter
+* 👁️ Eye-contact detection
+* 🧠 AI speech coaching
+* 📊 Speaking analytics
+* 🎨 More teleprompter themes
+* 🔤 Font-size customization
+* 📱 PWA support
+* 📂 Direct native gallery integration
+* 🤖 AI-based speech pacing and feedback
+
+## 💡 Why PromptCam?
+
+For many creators and students, remembering a complete speech while maintaining natural eye contact with the camera is difficult.
+
+PromptCam combines a **teleprompter and camera recorder into one simple mobile-first application**, allowing users to focus on delivering their message instead of memorizing it.
+
+## 👩‍💻 Developer
+
+**Niharika Lakhera**
+
+B.Tech — Artificial Intelligence
+
+---
+
+⭐ If you find PromptCam useful, consider giving the repository a star!
