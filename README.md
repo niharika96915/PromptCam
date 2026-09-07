@@ -4,6 +4,8 @@ PromptCam is a **mobile-first teleprompter camera web application** designed to 
 
 Simply paste your complete script, open the camera, and read the speech naturally while the teleprompter automatically scrolls on the screen.
 
+Live Demo: https://promptcam-zeta.vercel.app/
+
 ## ✨ Features
 
 * 📝 Paste your **complete speech/script**
